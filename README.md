@@ -8,7 +8,7 @@ Examples are found in the template files.
 
 Before beginning, be sure to read the GES-DISC how-to which explains the method of entering your credentials for data access!
 
-https://disc.gsfc.nasa.gov/information/howto?title=How%20to%20Download%20Data%20Files%20from%20HTTP%20Service%20with%20wget
+https://disc.gsfc.nasa.gov/data-access
 
 The second step is to find the variables of interest in:
 
