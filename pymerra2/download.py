@@ -671,7 +671,7 @@ def subdaily_download_and_convert(
     verbose : bool
     time_frequency: str
     """
-    if isinstance(output_dir, Path):
+    if not isinstance(output_dir, Path):
         output_dir = Path(output_dir)
     if output_dir is None:
         output_dir = Path.cwd()
@@ -1039,7 +1039,7 @@ def daily_download_and_convert(
     perhaps not an ideal separation as this is duplicated code...
 
     """
-    if isinstance(output_dir, Path):
+    if not isinstance(output_dir, Path):
         output_dir = Path(output_dir)
     if output_dir is None:
         output_dir = Path.cwd()
@@ -1183,7 +1183,7 @@ def download_from_url(
     List[Path]
         A list of the Paths of all netCDF files generated.
     """
-    if isinstance(output_dir, Path):
+    if not isinstance(output_dir, Path):
         output_dir = Path(output_dir)
     if output_dir is None:
         output_dir = Path.cwd()
