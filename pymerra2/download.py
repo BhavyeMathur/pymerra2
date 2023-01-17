@@ -15,8 +15,8 @@ import netCDF4
 import numpy as np
 import numpy.ma as ma
 
-from pymerra2 import __version__
-from pymerra2.variables import var_list
+from . import __version__
+from .variables import var_list
 
 # Aliases for default fill values
 defi2 = netCDF4.default_fillvals["i2"]

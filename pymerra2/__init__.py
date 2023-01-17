@@ -7,4 +7,4 @@ __author_email__ = "smith.trevorj@ouranos.ca"
 __license__ = "Apache 2.0"
 __copyright__ = "Copyright 2018 Ouranos Inc."
 
-from pymerra2 import download, variables
+from . import download, variables
