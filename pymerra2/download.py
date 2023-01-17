@@ -122,7 +122,7 @@ def fixed_netcdf(
         merra2_var_dict = var_list[var_name]
 
     search_str = "*{0}*.nc4".format(merra2_var_dict["collection"])
-    nc_files = [f for f in path_data.rglob(search_str)]
+    nc_files = list(path_data.rglob(search_str))
 
     nc_reference = netCDF4.Dataset(nc_files[0], "r")
     var_ref = nc_reference.variables[merra2_var_dict["merra_name"]]
